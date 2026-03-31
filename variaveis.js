@@ -65,3 +65,42 @@ rl.question("Digite seu nome: ", (nome) => {
 // valor = undefined
 // usuario = {nome: "Kaua", idade: 21} // objetos em javascript são coleções de pares chave-valor, onde a chave é uma string e o valor pode ser qualquer tipo de dado, incluindo outros objetos
 // lista = [1, 2, 3, 4, 5] // arrays em javascript são objetos que possuem uma propriedade length e métodos para manipular os elementos do array
+
+// 9. Conversão de tipos em javascript
+
+// String para Number
+let num1 = "35"
+Number(num1) // 35 - a função Number() tenta converter a string para um número, se a string não puder ser convertida para um número, o resultado será NaN (Not a Number)    
+let num = Number("42") // 123 - a função Number() tenta converter a string para um número, se a string não puder ser convertida para um número, o resultado será NaN (Not a Number)
+
+let float = parseFloat("3.14") // 3.14 - a função parseFloat() tenta converter a string para um número de ponto flutuante, se a string não puder ser convertida para um número, o resultado será NaN (Not a Number)
+let inteiro = parseInt("10.5") // 10 - a função parseInt() tenta converter a string para um número inteiro, se a string não puder ser convertida para um número, o resultado será NaN (Not a Number)
+
+// Number para String
+let str = String(100) // "100" - a função String() tenta converter o número para uma string, se o valor não puder ser convertido para uma string, o resultado será "undefined"
+let str2 = (12).toString() // "12" - o método toString() tenta converter o número para uma string, se o valor não puder ser convertido para uma string, o resultado será "undefined"
+
+// Boolean para Number
+
+console.log(Number(true)) // 1 - a função Number() tenta converter o booleano para um número, true é convertido para 1 e false é convertido para 0
+console.log(Number(false)) // 0 - a função Number() tenta converter o booleano para um número, true é convertido para 1 e false é convertido para 0
+
+// 10. Literais em javascript
+
+let texto = "Isso é uma string" // string literal é uma sequência de caracteres delimitada por aspas simples ou duplas, o valor da string é o que está entre as aspas
+console.log("String literal")
+let template = `Olá, ${nome}` // template literal é uma sequência de caracteres delimitada por crases, o valor do template literal é o que está entre as crases, template literals permitem a interpolação de expressões, ou seja, é possível incluir expressões dentro do template literal utilizando a sintaxe ${expressão}
+
+let fruta = "uva"
+let frutas = ["maçã", "banana", "laranja"]
+
+let ligado = true 
+let desligado = false
+
+let pessoa = {
+    nome: "Kaua",
+    idade: 21,
+    cidade: "São Paulo"
+}
+
+
