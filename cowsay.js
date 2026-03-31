@@ -4,6 +4,6 @@ console.log(
     cowsay.say({
         text: "MUUUUUUUUUUUU",
         e: "--",
-        f: "moofasa"
+        f: "mona-lisa"
     })
 )
